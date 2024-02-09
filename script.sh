@@ -16,11 +16,11 @@ function error() {
 # Asks for the commit type and checks if the type is valid
 for i in {1..3}
 do
-  echo -e "${GREEN}${BOLD}What type is it? (feat, bug, doc...)${NC}"
-  echo -e "${YELLOW}Options are: feat, bug, doc, chore, style, refactor, test, perf, ci, build${NC}"
+  echo -e "${GREEN}${BOLD}What type is it? (feat, fix, docs...)${NC}"
+  echo -e "${YELLOW}Options are: feat, fix, docs, chore, style, refactor, test, perf, ci, build${NC}"
   read type
 
-  if [[ "$type" =~ ^(feat|bug|doc|chore|style|refactor|test|perf|ci|build)$ ]]; then
+  if [[ "$type" =~ ^(feat|fix|docs|chore|style|refactor|test|perf|ci|build)$ ]]; then
     break
   else
     echo -e "${RED}The commit type must be one of the following: feat, bug, doc, chore, style, refactor, test, perf, ci, build.${NC}"
