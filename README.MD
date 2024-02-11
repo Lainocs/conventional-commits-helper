@@ -31,7 +31,7 @@ chmod +x script.sh
 
 ## Example
 
-![Example](terminal.png)
+![Example](https://github.com/Lainocs/conventional-commits-helper/blob/main/example.png?raw=true)
 
 Currently, you have to run the script in the same directory as the script itself. I'm working on a solution to make it more flexible.
 
